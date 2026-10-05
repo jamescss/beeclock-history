@@ -1,11 +1,11 @@
-# Commit History Evidence — 蜜蜂打卡 (BeeClock)
+# Commit History Evidence — 蜜蜂打卡-考勤工时记 (BeeClock)
 
 Prepared as supporting material for the App Review discussion
 (Guideline 4.3(a) response) — October 2026.
 
 This document contains the complete, unabridged commit history of the
-"蜜蜂打卡" (BeeClock) app, exported directly from the developer's private
-git repositories. It demonstrates that the app is an original work,
+"蜜蜂打卡-考勤工时记" (BeeClock) app, exported directly from the developer's
+private git repositories. It demonstrates that the app is an original work,
 independently developed over multiple years:
 
 - **Phase 1 — Original prototype (October – December 2019), 18 commits.**
