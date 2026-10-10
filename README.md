@@ -34,6 +34,31 @@ own repositories.
 
 ---
 
+## Why this app was built (developer's note)
+
+This project was never built to chase a market — it began as a personal
+tool for a concrete, everyday problem. After studying Objective-C for
+some time, the developer wanted a real project that would exercise the
+language end to end. At the same time, a daily annoyance at work kept
+growing: the company evaluates monthly overtime hours, attendance is
+recorded on NFC badge cards that employees themselves cannot query, and
+keeping overtime in a phone notepad was inconvenient and easy to forget.
+So the spare-time project became the tool the developer actually needed
+— an effortless, fully local attendance recorder.
+
+That is also why the earliest prototype (Phases 1 and 1.5 below) contains
+no mascot at all: it is the working skeleton — clock-in rules, records,
+holiday calendar, geofence. The honeybee came later, after the rebuilt
+app worked but still looked like a pile of plain tables. The bee — the
+diligent worker — was designed as the developer's own avatar as a 打工人
+("worker"), and its dance was deliberately tied to the attendance state:
+it flies out of the hive at clock-in, stays busy in the garden during
+work, and returns fully loaded at clock-out. Designing that concept took
+a large amount of additional spare-time work — which is why it exists in
+no other attendance app.
+
+---
+
 ## Phase 1: 2019 prototype — oldest first (source: private repo "worktime")
 
 2019-10-11 14:19:43  ca0866c  WangQi — Initial Commit
@@ -54,8 +79,6 @@ own repositories.
 2019-12-10 14:36:48  b20453b  jamescss — 弹出cell视图
 2019-12-15 13:26:30  e773d59  jamescss — 完成了修改某天记录功能
 2019-12-22 10:21:42  a1f3169  jamescss — 完成补卡功能
-
----
 
 ---
 
