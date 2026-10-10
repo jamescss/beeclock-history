@@ -13,7 +13,13 @@ independently developed over multiple years:
   v1.2 (make-up check-in, day-record editing, holiday-date checking,
   welcome / splash screens). Preserved in the developer's private GitHub
   repository "worktime".
-- **Phase 2 — Current app (April 2025 – present), 317 commits.**
+- **Phase 1.5 — Continued prototype (December 2019 – July 2020), 35 commits.**
+  The same project carried further: server-side holiday-calendar
+  synchronization, background refresh, monthly and yearly history views,
+  cross-midnight (overnight) check-in support, settings refinements, and
+  map/location exploration. Preserved on branch "syncday" of the same
+  private repository.
+- **Phase 2 — Current app (April 2025 – present), 320 commits.**
   The same personal project, rebuilt and extended into today's BeeClock:
   companion honeybee animation tied to attendance state, geofence
   arrival/departure reminders, Chinese statutory holiday calendar,
@@ -48,6 +54,51 @@ own repositories.
 2019-12-10 14:36:48  b20453b  jamescss — 弹出cell视图
 2019-12-15 13:26:30  e773d59  jamescss — 完成了修改某天记录功能
 2019-12-22 10:21:42  a1f3169  jamescss — 完成补卡功能
+
+---
+
+---
+
+## Phase 1.5: 2019-12 – 2020 continued prototype — oldest first
+(source: private repo "worktime", branch "syncday"; it branches off
+the Phase 1 history, so the 16 commits it shares with Phase 1 are not
+repeated here)
+
+2019-12-22 18:15  87b980d  jamescss — 支持跨天打卡的之前版本
+2019-12-25 22:02  494fddb  jamescss — 更新api之前
+2019-12-31 20:29  12a0b96  jamescss — 同步节日数据前
+2019-12-31 21:04  6f9a2b5  jamescss — 同步假日信息前
+2019-12-31 21:14  a073f8e  jamescss — 同步假日
+2020-01-02 23:26  a5acde8  jamescss — 搭建background处理
+2020-01-04 23:06  64e13e5  jamescss — 查询服务端信息基本可运行，但synstat为空
+2020-01-05 20:30  4c39390  jamescss — 分离calendar和synstat类定义之前
+2020-01-05 22:48  6dfa333  jamescss — 初步完成从服务端查询日历的功能，但还没有特殊处理年底的查询提前量；使用已查询保存的日历数据，避免重复查询服务端
+2020-01-07 22:12  85ad3cd  jamescss — 前后台切换的timer暂停恢复
+2020-01-11 18:36  014bb22  jamescss — 本地查询假日信息
+2020-01-16 23:14  f476acd  jamescss — 月历史TVC
+2020-01-17 23:30  809e1b0  jamescss — 获取工作月列表
+2020-01-21 23:00  c63cbbf  jamescss — 历史打卡数据按年拆分
+2020-01-28 19:07  406dfdd  jamescss — 点击history list弹出窗口
+2020-01-30 18:28  e2bd7f1  jamescss — 调整onoff布局
+2020-01-30 21:50  fef77b0  jamescss — 为iphone8挑战layout之前的版本
+2020-02-03 12:46  766ecbf  jamescss — before优化启动app查询api之前显示节日类型有误的版本
+2020-02-03 21:46  0aaecfa  jamescss — 补卡前支持跨天打卡之前的版本
+2020-02-08 22:34  12629be  jamescss — addsubview实现切前台动画
+2020-02-09 14:52  10d1751  jamescss — 尝试在MainVC监听事件之前的版本
+2020-02-11 22:32  74efc0f  jamescss — 执行推荐操作之前的版本
+2020-02-16 16:23  8cb466b  jamescss — 使用小文件回前台画面可减少显示白屏的时长
+2020-02-17 22:17  0519bb6  jamescss — 修正app切后台时跨天时钟处理bug
+2020-03-11 09:50  a6d47bb  jamescss — 优化跨天工作的处理
+2020-03-11 10:20  317cf3a  jamescss — 修正addcross bug
+2020-04-07 00:01  f442b1d  jamescss — 修正判断某天类型值长度0的bug
+2020-04-26 22:25  75be650  jamescss — 0426 调整保存按钮位置（优化app之前）
+2020-04-26 22:58  33808ca  jamescss — 添加始终显示上班打卡switch
+2020-04-28 23:06  6a4a32f  jamescss — 是否强制显示上班打卡按钮
+2020-05-12 22:50  84fff0c  jamescss — 首次进入强制设置
+2020-05-27 23:10  6f818e6  jamescss — NUT改进
+2020-05-28 23:22  394486d  jamescss — 调整NUT显示
+2020-05-30 23:43  41ffbaf  jamescss — NUTVC dismiss
+2020-07-05 22:36  6a96e62  jamescss — 解析baidu结果成功
 
 ---
 
@@ -370,3 +421,25 @@ own repositories.
 2026-10-03 19:26  078625e  james — fix: 欢迎页标题改「到达离开自动打卡」补齐离开方向
 2026-10-03 20:19  93067bd  james — fix: 商品加载通知切主线程发——修TestFlight后台线程碰AutoLayout崩溃
 2026-10-03 20:31  8598229  james — fix: 商品请求失败自动重试+进购买页兜底重拉——修首装购买页必失败
+2026-10-05 19:59  2fbdb99  james — fix: 向导期自动打卡延后到向导完成+保存位置requestLocation崩溃@try兜底+build8批次(部署目标15.0/向导返回键改完成钮/付费墙文案与素材遗留/ASC材料)
+2026-10-05 20:08  da91b0e  james — fix: 测试钩子包#ifdef DEBUG——Release二进制9处钩子签名清零(2.3.1隐藏功能风险清理)
+2026-10-09 16:33  f4cff20  james — fix: 10-8真机三修复+10-9围栏漂移防乒乓——向导复用页底部完成钮/恢复购买错误文案/立即启用后segment补刷/自动下班连续二次确认+入口10分钟防抖
+
+---
+
+## Continuity note (added October 10, 2026)
+
+The historical branches above were originally preserved separately. On
+October 10, 2026 they were joined, merge-only, into one continuous branch
+(master) in the private repository "worktime": the 2019 prototype
+(Phase 1), the 2020 continued prototype (Phase 1.5, branch "syncday"),
+and the current app line (Phase 2) are now a single lineage in which the
+earliest commits appear as direct ancestors of the latest ones.
+
+The join used `git merge -s ours --allow-unrelated-histories` twice: it
+only creates two merge commits that point at the existing histories. No
+commit was rewritten, rebased, or re-dated; every historical SHA, author,
+date, and message is unchanged, and the resulting tree is identical to
+the current app's tree. The full graph (375 commits: 373 unique + 2
+merge commits) can be verified with `git log --graph` in the private
+repository.
